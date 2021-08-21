@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/617453bb3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>singlePage</title>
+</head>
+
+<body>
+
+
+    <div class="topnav" id="myTopnav">
+        <div class="nav1">
+            <a class="active" href="#home">singlePage<i class="fas fa-cut"></i></a>
+        </div>
+        <div class="nav2">
+            <a href="#home" class="active">Home</a>
+            <a href="#style">Style</a>
+            <a href="#location">Location</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <section id="home">
+        <h2>Welcome to singlePage</h2>
+    </section>
+
+
+    <center>
+        <section id="style">
+            <h1 class="h-primary center">Famous Style</h1>
+
+            <div id="services">
+                <div class="box">
+                    <h2 class="h-secondary center">Buzz Cut</h2>
+                    <img src="img/buzz.jpg" alt="buzz cut">
+                    <p class="center">
+                        <!-- <img src="img/01.jpg" alt="buzz cut" style="max-width:130px;max-height:130px;margin-left:15px;"> -->
+                        The buzz cut is a masculine low-maintenance haircut for men who want really short
+                        hair. Stylish and easy to get, buzzed haircuts are often paired with faded or shaved sides. The
+                        hair
+                        cut close to the head with clippers doesn’t require any styling in the morning, and the cut can
+                        easily be done at home when it grows out a little longer than you’d like. A buzz cut hairstyle
+                        is an
+                        especially great option for guys with thick hair but can be a fashionable look if you have
+                        thinning
+                        hair or a receding hairline.
+                    </p>
+                </div>
+                <div class="box">
+                    <h2 class="h-secondary center">Mohawk</h2>
+                    <img src="img/Mohawk.jpg" alt="Mohawk">
+                    <p class="center">The mohawk is an edgy hairstyle with its origins in the punk rock movement.
+                        Mohawks feature a strip of long hair running from the hairline down to the back of the head with
+                        short or shaved sides. Traditionally, the long hair is styled into individual spikes, but there
+                        are many modern variations with soft and textured styling. The mohawk fade has become a popular
+                        look for guys who want an edgy style full of volume and flair.</p>
+                </div>
+                <div class="box">
+                    <h2 class="h-secondary center">Faux Hawk</h2>
+                    <img src="img/faux-hawk.jpg" alt="">
+                    <p class="center">Also known as a fohawk, the faux hawk is a trendy haircut style for guys who want
+                        to style a unique look. Simply put, the faux hawk hairstyle is a tame adaptation of the punk
+                        rock mohawk. The faux hawk starts with short hair on the sides and longer hair on top, which is
+                        pushed to the middle of the head and styled spiky. The faux hawk works well for men with
+                        straight full hair, which already tends to have volume.
+                        .</p>
+                </div>
+                <div class="box">
+                    <h2 class="h-secondary center">Pompadour</h2>
+                    <img src="img/pompadour.jpg" alt="">
+                    <p class="center">Pompadour is one of the most easily recognizable hairdos out there. We’ve written
+                        about it several times, and we’ve decided to give it the Haircut Inspiration treatment. The
+                        pompadour haircut has volume and length on top while the sides are short and
+                        slicked back. The cut was made famous by Elvis Presley but has evolved over time.</p>
+                </div>
+            </div>
+        </section>
+    </center>
+    <section id="location">
+        <!-- <h1 class="h-primary center">Location</h1> -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58924.17267619391!2d88.41301124933855!3d22.625406149702126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89fce103bdde5%3A0xfe7d6a4a297ddbb6!2sRajarhat%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1629366690496!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="" name="myForm" onsubmit="return validateForm()" >
+                <div class="formdesign" id="name">
+                    <label for="name">Name:</label>
+                    <input type="text" name="fname" id="" placeholder="Enter your name" required><b><span class="formerror"> </span></b>
+                </div>
+                <div class="formdesign" id="email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="femail" id="" placeholder="Enter your Email" required><b><span class="formerror"> </span></b>
+                </div>
+                <div class="formdesign" id="gender">
+                    <label for="email">Gender:</label>
+                    <input type="text" name="fgender" id="gender" placeholder="Enter your gender" required><b><span class="formerror"> </span></b>
+                </div>
+                <div class="formdesign" id="phone">
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" name="fphone" id="" placeholder="Enter your phone number" required><b><span class="formerror"> </span></b>
+                </div>
+                <div class="formdesign" id="message">
+                    <label for="message">message:</label>
+                    <textarea name="message" id="fmessage" cols="30" rows="10"></textarea required><b><span class="formerror"> </span></b>
+                </div>
+                <button id="but" type="submit" value="Submit">submit</button>
+                <!-- <input id="but" type="submit" value="Submit" > -->
+            </form>
+        </div>
+    </section>
+    <footer>
+        <!-- <div>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+        </div> -->
+        <div class="foot">
+            copyright&copy;www.salon.com.All rights reserved!
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram-square"></i>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+    <script src="juv.js"></script>
+
+</html>
